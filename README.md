@@ -6,11 +6,36 @@ Date: 3 July 2017
 For demo purpose.
 
 # Basics
-Simple Flask REST API which allows user accounts security handlement. Default roles are:
+Simple Flask REST API which allows user accounts management using SQLAlchemy. Default roles are:
 
   * 1: admin 
   * 2: worker
 
+# Environment creation
+All project requirements are included in requirements.txt file
+
+# Test execution
+
+<pre>
+>  pytest
+================================================================ test session starts =================================================================
+platform linux -- Python 3.5.2, pytest-3.1.2, py-1.4.34, pluggy-0.4.0
+rootdir: /home/eric/Development/own/repo/security_manager, inifile:
+collected 5 items 
+
+tests/test_user.py .....
+
+============================================================== 5 passed in 3.15 seconds ==============================================================
+
+</pre>
+
+# Server execution
+
+<pre>
+>  python runserver.py
+ * Running on http://127.0.0.1:5500/ (Press CTRL+C to quit)
+ * Restarting with stat
+</pre>
 
 # API Rest
 
