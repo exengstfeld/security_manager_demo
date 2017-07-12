@@ -12,8 +12,7 @@ class UserResource(Resource):
         return data.as_dict()
 
     def delete(self, username=None):
-        delete_user(username)
-        data = get_user(username)
+        data = delete_user(username)
         return data.as_dict()
 
     def post(self, username=None):
